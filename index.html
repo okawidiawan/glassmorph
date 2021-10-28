@@ -1,123 +1,41 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="css/LogoBorderCircle.png" />
-    <title>Oka Website</title>
-    <link type="text/css" rel="stylesheet" href="style/style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--FONT-->
-    <link href='//fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
-    <!--ICON-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Oka Widiawan - Portfolio Website</title>
 </head>
 
-<body id="main">
+<body>
+    <!-- Main Start -->
+    <div class="main">
 
-    <!-- SIDE NAVIGATION -->
-    <div id="mySidenav" class="sidenav">
-        <a data-toggle="tab" href="#home" onclick="closeNav()"><span class="glyphicon glyphicon-home"></span></a>
-        <a data-toggle="tab" href="#about" onclick="closeNav()"><span class="fa fa-user"></span></a>
-        <a data-toggle="tab" href="#cv" onclick="closeNav()"><span class="material-icons">insert_drive_file</span></a>
-        <a data-toggle="tab" href="#contact" onclick="closeNav()"><span class="fa fa-address-book-o"></span></a>
-        <a data-toggle="tab" href="#download" onclick="closeNav()"><span
-                class="material-icons">cloud_download</span></a>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    </div>
-    <div class="sidebtn">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="material-icons">menu</i></span>
-    </div>
-    <!-- SIDE NAVIGATION END HERE-->
-
-
-    <div class="container-fluid">
-        <div class="logooka">
-            <span class="icon-LogoBorderCircle"><span class="path1"></span><span class="path2"></span><span
-                    class="path3"></span><span class="path4"></span><span class="path5"></span></span>
-        </div>
-        <h2>Hello, Im Oka Widiawan</h2>
-
-    </div>
-
-
-
-
-    <div class="container-fluid">
-
-
-        <ul class="nav nav-tabs nav-justified hidden">
-            <li class="active"><a data-toggle="tab" href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
-            <li><a data-toggle="tab" href="#about"><span class="fa fa-user"></span></a></li>
-            <li><a data-toggle="tab" href="#cv"><span class="material-icons">insert_drive_file</span></a></li>
-            <li><a data-toggle="tab" href="#contact"><span class="fa fa-address-book-o"></span></a></li>
-            <li><a data-toggle="tab" href="#download"><span class="material-icons">cloud_download</span></a></li>
-
-        </ul>
-
-        <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-                <h1 class="hidden">Welcome</h1>
-            </div>
-            <div id="about" class="tab-pane fade">
-                <h3>About me</h3>
-                <h5>im born in,</h5>
-                <h4>Jakarta, 9 March 1992</h4>
-                <h5>and live at,</h5>
-                <h4>Pasar Minggu, South Jakarta</h4>
-            </div>
-            <div id="cv" class="tab-pane fade">
-                <h3>Curricullum Vitae</h3>
-                <h5>Education</h5>
-                <h4>Gunadarma University</h4>
-                <h6>faculty of computer science and information technology</h6>
-                <h4>Bachelor Degree Majoring in Information System</h4>
-                <br>
-                <h5>Skill</h5>
-                <h4>HTML</h4>
-                <h4>CSS</h4>
-                <h4>Javascript</h4>
-                <h4>Bootstrap</h4>
-                <br>
-                <h5>Work Experience</h5>
-                <h4>Administration and Technical Officer</h4>
-                <h4>Data Control</h4>
-                <br>
-            </div>
-            <div id="contact" class="tab-pane fade">
-                <h3>Contact me on</h3><br>
-                <div class="contactbtn">
-                    <a href="#" class="material-icons">email</a>
-                    <a href="#" class="material-icons">phone_iphone</a>
-                    <a href="#" class="material-icons">games</a>
-
+        <!-- Home Section Start -->
+        <section class="home-section align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="home-text">
+                        <p>Hello, I'm</p>
+                        <h1>Oka Widiawan</h1>
+                        <h2>Frontend Web Developer</h2>
+                        <a href="#" class="btn">more about me</a>
+                        <a href="#" class="btn">portfolios</a>
+                    </div>
+                    <div class="home-img">
+                        <div class="img-box">
+                            <img src="img/profile-img.png" alt="profile-img">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="download" class="tab-pane fade">
-                <h3>Download CV</h3><br>
-                <div class="downloadbtn">
-                    <a href="download/CV_Oka_Widiawan.docx" download="CV - Oka Widiawan" class="fa fa-file-word-o"></a>
-                    <a href="download/CV_Oka_Widiawan.pdf" download="CV - Oka Widiawan" class="fa fa-file-pdf-o"></a>
-                </div>
-            </div>
-        </div>
+        </section>
+        <!-- Home Section End -->
+
     </div>
-
-
-    <footer>&#xA9; 2016 Oka Widiawan</footer>
-    <script src="js/fadein.js"></script>
-    <script src="js/sidenav.js"></script>
-
-
+    <!-- Main End -->
 </body>
 
 </html>
