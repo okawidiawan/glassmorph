@@ -1,4 +1,46 @@
-/* About Tabs */
+/* - Toogle Navbar - */
+const navbarToggler = document.querySelector(".nav-toggler");
+navbarToggler.addEventListener("click", () => {
+    hideSection();
+    toggleNavbar();
+    document.body.classList.toggle("hide-scrolling");
+});
+function hideSection() {
+    document.querySelector("section.active").classList.toggle("fade-out");
+}
+function toggleNavbar() {
+    document.querySelector(".header").classList.toggle("active");
+}
+
+
+
+/* - Active Section - */
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("link-item") && e.target.hash !== "") {
+        // active the overlay to prevent multiple clicks
+        document.querySelector(".overlay").classList.add("active");
+        navbarToggler.classList.add("hide");
+        if (e.target.classList.contains("nav-item")) {
+            toggleNavbar();
+        } else {
+            hideSection();
+            document.body.classList.add("hide-scrolling");
+        }
+        setTimeout(() => {
+            document.querySelector("section.active").classList.remove("active", "fade-out");
+            document.querySelector(e.target.hash).classList.add("active");
+            window.scrollTo(0, 0);
+            document.body.classList.remove("hide-scrolling");
+            navbarToggler.classList.remove("hide");
+            document.querySelector(".overlay").classList.remove("active");
+        }, 500);
+
+    }
+});
+
+
+
+/* - About Tabs - */
 const tabsContainer = document.querySelector(".about-tabs");
 aboutSection = document.querySelector(".about-section");
 
@@ -14,7 +56,8 @@ tabsContainer.addEventListener("click", (e) => {
 });
 
 
-/* Portfolio Item Detail Popup */
+
+/* - Portfolio Item Detail Popup - */
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("view-project-btn")) {
         togglePortfolioPopup();
@@ -44,5 +87,4 @@ function portfolioItemDetails(portfolioItem) {
     document.querySelector(".pp-header h3").innerHTML = portfolioItem.querySelector(".portfolio-item-title").innerHTML;
 
     document.querySelector(".pp-body").innerHTML = portfolioItem.querySelector(".portfolio-item-details").innerHTML;
-
 }
