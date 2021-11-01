@@ -1,3 +1,12 @@
+/* Page Loader */
+window.addEventListener("load", () => {
+    document.querySelector(".main").classList.remove("hidden");
+    document.querySelector(".home-section").classList.add("active");
+    setTimeout(() => {
+        document.querySelector(".page-loader").style.display = "none";
+    }, 600);
+})
+
 /* - Toogle Navbar - */
 const navbarToggler = document.querySelector(".nav-toggler");
 navbarToggler.addEventListener("click", () => {
