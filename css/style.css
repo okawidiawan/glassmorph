@@ -7,16 +7,16 @@ Fonts
 Variables 
 ------------------------*/
 :root {
-  --main-color: #e02f6b;
+  --main-color: #3e4154;
   --blue: #0000ff;
-  --blue-dark: #18293c;
-  --orange: #ffa500;
-  --green-yellow: #cddc39;
-  --pink-light: #efa2b4;
-  --cyan-light: #aef1ee;
+  --blue-dark: #3e4154;
+  --orange: #0ceca1;
+  /* --green-yellow: #cddc39; */
+  --sea-blue: #77898f; /* #efa2b4;*/
+  --white-milk: #ffffff; /* #aef1ee;*/
   --white: #ffffff;
   --white-alpha-40: rgba(255, 255, 255, 0.4);
-  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --white-alpha-25: rgba(255, 255, 255, 0.1);
   --backdrop-filter-blur: blur(5px);
 }
 
@@ -39,8 +39,8 @@ body {
   min-height: 100vh;
   background-image: linear-gradient(
     to bottom right,
-    var(--pink-light),
-    var(--cyan-light)
+    var(--sea-blue),
+    var(--white-milk)
   );
   background-attachment: fixed;
   font-size: 16px;
@@ -287,7 +287,7 @@ button {
 .bg-circles .circle-1 {
   height: 60px;
   width: 60px;
-  background-color: var(--blue);
+  background-color: var(--blue-dark);
   left: 5%;
   top: 10%;
   opacity: 0.3;
@@ -316,9 +316,9 @@ button {
 .bg-circles .circle-4 {
   height: 50px;
   width: 50px;
-  background-color: var(--orange);
-  left: -30px;
-  top: 80%;
+  background-color: var(--white);
+  left: -10px;
+  top: 65%;
   opacity: 0.6;
 }
 
@@ -552,7 +552,7 @@ Home Section
 ------------------------*/
 .home-section {
   /* display: flex; */
-  padding: 120px 0;
+  padding: 200px 0;
 }
 
 .home-section.active {
@@ -586,7 +586,7 @@ Home Section
 }
 
 .home-img .img-box {
-  max-width: 360px;
+  max-width: 250px;
   background-color: var(--white-alpha-25);
   border-radius: 50%;
   border: 8px solid var(--white-alpha-25);
@@ -611,13 +611,15 @@ Home Section
 
 .about-img .img-box {
   background-color: var(--white-alpha-25);
-  max-width: 380px;
+  max-width: 250px;
   border: 1px solid var(--white-alpha-40);
   margin: auto;
-  border-radius: 10px;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .about-img .img-box img {
+  border-radius: 50%;
   width: 100%;
 }
 
@@ -1013,5 +1015,9 @@ Home Section
   }
   .pp-header h3 {
     font-size: 20px;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }
