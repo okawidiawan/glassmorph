@@ -378,14 +378,14 @@ button {
 .page-loader div:nth-child(2) {
   height: 45px;
   width: 45px;
-  border-color: var(--blue);
+  border-color: var(--white-milk);
   animation-duration: 1.2s;
 }
 
 .page-loader div:nth-child(3) {
   height: 30px;
   width: 30px;
-  border-color: var(--orange);
+  border-color: var(--main-color);
 }
 
 /* Header */
@@ -954,6 +954,9 @@ Home Section
 
 /* Responsive */
 @media (max-width: 991px) {
+  .home-section {
+    padding: 100px 0;
+  }
   .container {
     padding: 0;
   }
@@ -968,7 +971,7 @@ Home Section
     order: -1;
   }
   .home-img .img-box {
-    max-width: 300px;
+    max-width: 230px;
   }
   .home-text .btn {
     margin: 0 7px 15px;
